@@ -1,10 +1,12 @@
 class TagManipulator(): 
-      
+
     def parse_string(self, tags):
-        result = []
+           
 
-        if len(tags) < 1 :
-            return result
-
+        if len(tags) < 1 or tags == ',':
+            result = []
+        else:
+            result = [tags]
+            
         return result
 
